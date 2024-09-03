@@ -182,7 +182,7 @@ class Tapper:
             response_json = await response.json()
             tasks = response_json['response']
             for task in tasks:
-                if not task['isCompleted'] and task['type'] != 'INVITE_FRIENDS' and task['type'] != 'BOOST_TG':
+                if not task['isCompleted'] and task['type'] not in settings.DISABLED_TASKS:
                     await asyncio.sleep(delay=randint(5, 10))
                     logger.info(f"{self.session_name} | Performing task <lc>{task['taskName']}</lc>...")
                     match task['type']:
