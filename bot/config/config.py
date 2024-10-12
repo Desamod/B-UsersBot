@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     AUTO_TASK: bool = True
     JOIN_TG_CHANNELS: bool = True
     USE_PROXY_FROM_FILE: bool = False
-    REF_ID: str = 'ref-r2RLzW1YK4Q4SjJk7vHHEU'
+    REF_ID: str = 'ref-5VpQcGPE8TAeULDoUQtCFq'
     DISABLED_TASKS: list[str] = ['CONNECT_WALLET', 'INVITE_FRIENDS', 'BOOST_TG', 'SEND_SIMPLE_TON_TRX']
 
 

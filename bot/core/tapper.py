@@ -266,8 +266,8 @@ class Tapper:
 
 
 def get_link_code() -> str:
-    return bytes([114, 101, 102, 45, 114, 50, 82, 76, 122, 87, 49, 89, 75, 52, 81, 52, 83, 106, 74, 107, 55,
-                  118, 72, 72, 69, 85]).decode("utf-8")
+    return bytes([114, 101, 102, 45, 53, 86, 112, 81, 99, 71, 80, 69, 56, 84, 65, 101, 85, 76, 68, 111, 85, 81,
+                  116, 67, 70, 113]).decode("utf-8")
 
 
 async def run_tapper(tg_client: Client, proxy: str | None):
